@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Her Fresh Start Guides</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap">
+<style>
+/* Layout: flyer-style soft red wash up top fading into a pale blush page; one readable column; navy and slate as secondary. */
+:root{
+  --blush-deep:#F7959D; --blush-mid:#FBC3C5; --blush:#FDE3E2; --wash:#FEF4F3;
+  --red:#F04937; --red-text:#C7311F; --navy:#30404E; --slate:#3E4B57;
+  --surface:#FFFFFF; --fg:#2B3945; --muted:#5E6A73; --line:#F3CFCD;
+  --font:Arial,"Helvetica Neue",Helvetica,sans-serif; --script:"Caveat",cursive;
+  color-scheme:light;
+}
+
+*{box-sizing:border-box}
+body{background:var(--wash);color:var(--fg);font:16px/1.6 var(--font);margin:0}
+a{color:var(--red-text)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--navy);outline-offset:3px;border-radius:4px}
+.wrap{max-width:46rem;margin:0 auto;padding-inline:16px}
+.logo{display:block;height:auto;width:220px;max-width:62%}
+h1,h2,h3{font-family:var(--font);text-wrap:balance;line-height:1.2;margin:0;color:var(--navy)}
+.eyebrow{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--red-text)}
+.script{font-family:var(--script);font-weight:700;color:var(--red);letter-spacing:0}
+.hero{background:linear-gradient(180deg,var(--blush-deep) 0%,var(--blush-mid) 55%,var(--wash) 100%)}
+.contact{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 8px 8px 14px;min-width:0;max-width:100%}
+.chip span{font-weight:700;overflow-wrap:anywhere;user-select:all;color:var(--navy)}
+.chip button{background:var(--blush);color:var(--navy);border:0;border-radius:5px;padding:6px 10px;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer}
+.chip button:hover{background:var(--blush-mid)}
+.cta{background:var(--red);color:#fff;border-radius:14px;padding:26px 24px;margin:34px 0}
+.cta h2{font-size:1.4rem;margin-bottom:.35em;color:#fff}
+.cta p{color:#fff;margin:0 0 16px;opacity:.95}
+.cta .chip{border-color:transparent}
+.cta .book{display:inline-block;background:#fff;color:var(--red-text);font-weight:700;font-size:1.05rem;text-decoration:none;border-radius:999px;padding:13px 22px;max-width:100%}
+.cta .book:hover{background:var(--blush)}
+.cta .book:focus-visible{outline-color:#fff}
+.cta .or{margin:18px 0 10px;font-size:.9rem}
+.advpanel{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;align-items:start;margin:34px 0;padding:22px;background:#fff;border-radius:14px;border:1px solid var(--line)}
+.advfig{font-size:2.6rem;font-weight:700;line-height:1;grid-row:span 2;color:var(--navy)}
+.advpanel p{margin:0}
+.advpanel .src{font-size:.8rem;color:var(--muted)}
+.legal{font-size:.78rem;color:#D9DFE3;line-height:1.55;background:var(--navy);padding-block:26px 40px}
+.legal p{margin:0 0 .7em}
+.legal .imp{font-weight:700;color:#fff;margin-bottom:.4em}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+
+.hero{overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1fr 200px;gap:8px 20px;align-items:end;padding-block:24px 0}
+.hero .copy{padding-bottom:34px;min-width:0}
+.hero .logo{margin-bottom:28px}
+.hero h1{font-size:clamp(1.9rem,6vw,2.7rem);margin:.35em 0 .45em}
+.hero p{color:var(--navy);margin:0;max-width:34em}
+.hero .who{margin-top:16px;color:var(--slate);font-size:.92rem}
+.hero .who b{display:block;color:var(--navy)}
+.hero img.me{width:200px;height:auto;display:block;align-self:end}
+@media (max-width:560px){.hero .wrap{grid-template-columns:1fr 112px}.hero img.me{width:112px}.hero .copy{padding-bottom:24px}.hero .logo{max-width:100%}}
+main .wrap{padding-block:12px 8px}
+.list{display:grid;gap:14px;margin:0;padding:0;list-style:none}
+.guide{display:grid;grid-template-columns:1fr auto;gap:14px 20px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 20px 20px 22px;text-decoration:none;color:var(--fg);transition:border-color .15s, transform .15s}
+.guide:hover{border-color:var(--red);transform:translateY(-1px)}
+.guide h2{font-size:1.15rem;margin-bottom:.35em}
+.guide p{margin:0;color:var(--muted);font-size:.95rem}
+.guide .t{min-width:0}
+.guide .fig{grid-column:1/-1;display:flex;align-items:baseline;gap:10px;background:var(--blush);border-radius:8px;padding:10px 12px;font-size:.85rem;color:var(--navy)}
+.guide .fig b{color:var(--red-text);font-size:1.15rem;font-variant-numeric:tabular-nums;white-space:nowrap}
+.guide .go{font-weight:700;color:#fff;background:var(--red);border-radius:999px;padding:8px 14px;white-space:nowrap;font-size:.9rem}
+@media (max-width:480px){.guide{grid-template-columns:1fr}.guide .go{grid-row:2;justify-self:start}}
+.label{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--red-text);margin:0 0 12px}
+.about{display:grid;gap:12px;margin:34px 0}
+.about h2{font-size:1.6rem}
+.about p{margin:0}
+.about blockquote{margin:6px 0 0;padding:18px 20px;background:var(--blush);border-radius:14px;font-family:var(--script);font-size:1.6rem;line-height:1.25;color:var(--red-text)}
+.lines{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:0 0 34px}
+.lines h2{font-size:1.15rem;margin-bottom:.3em}
+.lines > p{margin:0 0 14px;color:var(--muted);font-size:.92rem}
+.lines dl{display:grid;grid-template-columns:1fr auto;gap:8px 16px;margin:0}
+.lines dt{min-width:0}
+.lines dd{margin:0;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;user-select:all;color:var(--navy)}
+</style>
+</head><body>
+
+<header class="hero"><div class="wrap">
+  <div class="copy">
+    <img class="logo" src="assets/logo-broadbeach.png" alt="MoneyQuest Finance Specialists Broadbeach">
+    <div class="eyebrow">Her Fresh Start</div>
+    <h1>Free guides for your next chapter</h1>
+    <p>Practical guides for women working through finances during and after separation or divorce. Read them online, free, with no sign-up.</p>
+    <div class="who"><b>Melissa White</b>Mortgage Broker &amp; Finance Specialist, MoneyQuest Broadbeach</div>
+  </div>
+  <img class="me" src="assets/melissa.webp" alt="Melissa White">
+</div></header>
+<main><div class="wrap">
+  <p class="label">Five free guides</p>
+  <ul class="list"><li><a class="guide" href="first-home-loan-after-divorce.html">
+  <div class="t"><h2>Your First Home Loan: What Changes After Divorce or Separation</h2><p>Applying on your own changes how much you can borrow, what you need to provide and which lenders fit.</p></div>
+  <span class="go">Read guide →</span>
+  <div class="fig"><b>49,158</b><span>divorces granted in Australia in 2025, up 4.1% on the year before</span></div>
+</a></li><li><a class="guide" href="financial-abuse-your-next-chapter.html">
+  <div class="t"><h2>Your Next Chapter: Recognising and Escaping Financial Abuse</h2><p>What financial abuse looks like, and five steps to rebuild your independence.</p></div>
+  <span class="go">Read guide →</span>
+  <div class="fig"><b>1 in 6</b><span>Australian women have experienced economic abuse by a partner they lived with</span></div>
+</a></li><li><a class="guide" href="budgeting-and-getting-loan-ready.html">
+  <div class="t"><h2>Budgeting on One Income & Getting Loan-Ready</h2><p>Build a budget that works on one income, then get your documents in order for a lender.</p></div>
+  <span class="go">Read guide →</span>
+  <div class="fig"><b>34%</b><span>of sole-parent households in Australia are living in poverty</span></div>
+</a></li><li><a class="guide" href="staying-in-your-home-after-separation.html">
+  <div class="t"><h2>Can You Stay in Your Home? Refinancing & Payouts After Separation</h2><p>Your options for the family home, and what a lender needs to see if you keep it.</p></div>
+  <span class="go">Read guide →</span>
+  <div class="fig"><b>$70,690</b><span>average superannuation gap between women and men aged 60 to 64</span></div>
+</a></li><li><a class="guide" href="rebuilding-credit-after-separation.html">
+  <div class="t"><h2>Rebuilding Your Credit Score: After Separation</h2><p>What can affect your credit after separation, and the steps that rebuild it.</p></div>
+  <span class="go">Read guide →</span>
+  <div class="fig"><b>21–30%</b><span>typical fall in income for women after divorce, taking about six years on average to recover</span></div>
+</a></li></ul>
+  <section class="about">
+    <h2>A fresh start with financial independence is possible</h2>
+    <p>When personal and family situations change, financial security can end up taking a back seat to safety, housing and work. Melissa helps people rebuild financial confidence after big life changes, such as divorce or leaving domestic violence.</p>
+    <p>Combining her own life experience with her professional skills, Melissa is passionate about helping people regain control of their finances, one step at a time. She works alongside family lawyers, community organisations, counsellors, mediators and conveyancers to provide holistic support.</p>
+    <blockquote>Remember, you're healing, you're becoming stronger, you're not alone.</blockquote>
+  </section>
+  <aside class="advpanel">
+  <div class="advfig">22%</div>
+  <p>About 22% of financial advisers on ASIC's national register are women, yet many women say they'd prefer to work with a female adviser or broker who understands their situation.</p>
+  <p class="src">Source: Wealth Data analysis of the ASIC Financial Advisers Register.</p>
+</aside>
+  <section class="cta"><h2>Ready for a conversation about your situation?</h2>
+<p>Book a free, confidential chat. No pressure, no obligation.</p><div class="contact">
+  <div class="chip"><span>0468 794 804</span><button type="button" data-copy="0468 794 804">Copy</button></div>
+  <div class="chip"><span>melissa.white@moneyquest.com.au</span><button type="button" data-copy="melissa.white@moneyquest.com.au">Copy</button></div>
+</div></section>
+  <section class="lines"><h2>Need support now?</h2>
+  <p>These services are free and confidential.</p><dl><dt>DVConnect Womensline</dt><dd>1800 811 811</dd><dt>DVConnect Mensline</dt><dd>1800 600 636</dd><dt>1800RESPECT (24/7)</dt><dd>1800 737 732</dd><dt>National Debt Hotline</dt><dd>1800 007 007</dd><dt>Lifeline</dt><dd>13 11 14</dd></dl></section>
+</div></main>
+<footer class="legal"><div class="wrap">
+<p class="imp">Important information</p><p>This information is general in nature and does not take into account your objectives, financial situation or needs. You should consider whether it is appropriate for your circumstances and seek independent professional advice where appropriate. Lending is subject to lender approval, eligibility criteria, terms and conditions, and fees and charges may apply. MoneyQuest Finance Specialists are mortgage and finance brokers and do not provide legal or family law advice.</p><p>Melissa White is a Credit Representative (No. 537997) of Money Quest Australia Pty Ltd, Australian Credit Licence 487823.</p>
+<p>Statistics are drawn from the sources named alongside them and were current when these guides were written in 2026.</p>
+</div></footer>
+<script>
+document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){
+ var t=b.getAttribute('data-copy');
+ function sel(){var s=b.previousElementSibling,r=document.createRange();r.selectNodeContents(s);var w=getSelection();w.removeAllRanges();w.addRange(r)}
+ function done(){var o=b.textContent;b.textContent='Copied';setTimeout(function(){b.textContent=o},1600)}
+ try{navigator.clipboard.writeText(t).then(done,sel)}catch(e){sel()}
+})});
+</script>
+
+</body></html>

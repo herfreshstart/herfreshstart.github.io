@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Budgeting &amp; getting loan-ready | Her Fresh Start</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap">
+<style>
+/* Layout: flyer-style soft red wash up top fading into a pale blush page; one readable column; navy and slate as secondary. */
+:root{
+  --blush-deep:#F7959D; --blush-mid:#FBC3C5; --blush:#FDE3E2; --wash:#FEF4F3;
+  --red:#F04937; --red-text:#C7311F; --navy:#30404E; --slate:#3E4B57;
+  --surface:#FFFFFF; --fg:#2B3945; --muted:#5E6A73; --line:#F3CFCD;
+  --font:Arial,"Helvetica Neue",Helvetica,sans-serif; --script:"Caveat",cursive;
+  color-scheme:light;
+}
+
+*{box-sizing:border-box}
+body{background:var(--wash);color:var(--fg);font:16px/1.6 var(--font);margin:0}
+a{color:var(--red-text)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--navy);outline-offset:3px;border-radius:4px}
+.wrap{max-width:46rem;margin:0 auto;padding-inline:16px}
+.logo{display:block;height:auto;width:220px;max-width:62%}
+h1,h2,h3{font-family:var(--font);text-wrap:balance;line-height:1.2;margin:0;color:var(--navy)}
+.eyebrow{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--red-text)}
+.script{font-family:var(--script);font-weight:700;color:var(--red);letter-spacing:0}
+.hero{background:linear-gradient(180deg,var(--blush-deep) 0%,var(--blush-mid) 55%,var(--wash) 100%)}
+.contact{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 8px 8px 14px;min-width:0;max-width:100%}
+.chip span{font-weight:700;overflow-wrap:anywhere;user-select:all;color:var(--navy)}
+.chip button{background:var(--blush);color:var(--navy);border:0;border-radius:5px;padding:6px 10px;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer}
+.chip button:hover{background:var(--blush-mid)}
+.cta{background:var(--red);color:#fff;border-radius:14px;padding:26px 24px;margin:34px 0}
+.cta h2{font-size:1.4rem;margin-bottom:.35em;color:#fff}
+.cta p{color:#fff;margin:0 0 16px;opacity:.95}
+.cta .chip{border-color:transparent}
+.cta .book{display:inline-block;background:#fff;color:var(--red-text);font-weight:700;font-size:1.05rem;text-decoration:none;border-radius:999px;padding:13px 22px;max-width:100%}
+.cta .book:hover{background:var(--blush)}
+.cta .book:focus-visible{outline-color:#fff}
+.cta .or{margin:18px 0 10px;font-size:.9rem}
+.advpanel{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;align-items:start;margin:34px 0;padding:22px;background:#fff;border-radius:14px;border:1px solid var(--line)}
+.advfig{font-size:2.6rem;font-weight:700;line-height:1;grid-row:span 2;color:var(--navy)}
+.advpanel p{margin:0}
+.advpanel .src{font-size:.8rem;color:var(--muted)}
+.legal{font-size:.78rem;color:#D9DFE3;line-height:1.55;background:var(--navy);padding-block:26px 40px}
+.legal p{margin:0 0 .7em}
+.legal .imp{font-weight:700;color:#fff;margin-bottom:.4em}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+
+.hero .wrap{padding-block:22px 40px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+.back{color:var(--navy);font-weight:700;font-size:.9rem;text-decoration:none;background:#fff;border-radius:999px;padding:7px 14px}
+.back:hover{background:var(--blush)}
+.hero h1{font-size:clamp(1.75rem,5vw,2.5rem);margin-top:.35em}
+.hero .by{color:var(--slate);margin-top:1em;font-size:.95rem}
+main .wrap{padding-block:8px 8px}
+main p{margin:0 0 1em}
+.lede{font-size:1.12rem}
+.stat{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;align-items:center;background:var(--blush);border-radius:14px;padding:20px 22px;margin:28px 0}
+.stat .fig{font-size:clamp(2rem,7vw,2.8rem);font-weight:700;color:var(--red-text);line-height:1;font-variant-numeric:tabular-nums}
+.stat .lab{font-weight:700;min-width:0;color:var(--navy)}
+.stat .src{grid-column:1/-1;font-size:.8rem;color:var(--muted)}
+@media (max-width:480px){.stat{grid-template-columns:1fr}}
+section{margin:34px 0}
+section h2{font-size:1.35rem;margin-bottom:.7em}
+ul.plain{margin:0;padding-left:1.2em;display:grid;gap:.55em}
+ul.plain li::marker{color:var(--red)}
+ul.ticks{list-style:none;margin:0;padding:0;display:grid;gap:.55em}
+ul.ticks li{position:relative;padding-left:2em}
+ul.ticks li::before{content:"";position:absolute;left:0;top:.2em;width:1.2em;height:1.2em;border-radius:4px;background:var(--red)}
+ul.ticks li::after{content:"";position:absolute;left:.42em;top:.36em;width:.32em;height:.62em;border:solid #fff;border-width:0 .16em .16em 0;transform:rotate(45deg)}
+.callout{background:var(--blush);border-radius:14px;padding:20px 22px}
+.callout h2{font-size:1.05rem;color:var(--red-text);margin-bottom:.4em}
+.callout p{margin:0;font-size:1.05rem;color:var(--navy)}
+.help{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;display:grid;grid-template-columns:120px 1fr;gap:20px;align-items:end;overflow:hidden}
+.help img{width:120px;height:auto;display:block;margin-bottom:-24px}
+.help h2{font-size:1.5rem;margin-bottom:.4em}
+.help > div{min-width:0;padding-bottom:4px}
+.help ul.ticks li::before{background:var(--navy)}
+@media (max-width:520px){.help{grid-template-columns:1fr}.help img{width:110px;margin:0 auto -24px;order:2}}
+.groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:14px}
+.grp{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;min-width:0}
+.grp h3{font-size:1rem;margin-bottom:.7em}
+.grp ul.ticks{font-size:.95rem}
+ol.steps{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+ol.steps li{display:grid;grid-template-columns:2.4rem 1fr;gap:14px;align-items:start;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+ol.steps li > div{min-width:0}
+ol.steps .n{display:grid;place-items:center;width:2.4rem;height:2.4rem;border-radius:50%;background:var(--red);color:#fff;font-weight:700;font-size:1.1rem}
+ol.steps b{color:var(--navy)}
+.safety{background:#fff;border:2px solid var(--red);border-radius:14px;padding:20px 22px;margin:24px 0}
+.safety h2{font-size:1.2rem;margin-bottom:.3em}
+.safety p{margin:0 0 12px;font-size:.95rem}
+.safety dl{display:grid;grid-template-columns:1fr auto;gap:6px 16px;margin:0 0 12px}
+.safety dt{min-width:0}
+.safety dd{margin:0;font-weight:700;white-space:nowrap;user-select:all;color:var(--navy);font-variant-numeric:tabular-nums}
+.safety .tip{margin:0;color:var(--muted);font-size:.88rem}
+.quote{margin:34px 0;padding:20px 22px;background:var(--blush);border-radius:14px;font-family:var(--script);font-size:1.7rem;line-height:1.25;color:var(--red-text)}
+.next{display:grid;gap:10px}
+.next a{display:block;padding:14px 16px;background:#fff;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--navy);font-weight:700}
+.next a:hover{border-color:var(--red);background:var(--blush)}
+</style></head>
+<body>
+<header class="hero"><div class="wrap">
+  <div class="top"><img class="logo" src="assets/logo-broadbeach.png" alt="MoneyQuest Finance Specialists Broadbeach"><a class="back" href="index.html">All free guides</a></div>
+  <div class="eyebrow">Her Fresh Start · Free guide</div>
+  <h1>Budgeting on One Income & Getting Loan-Ready</h1>
+  <div class="by">By Melissa White, Mortgage Broker &amp; Finance Specialist, MoneyQuest Broadbeach</div>
+</div></header>
+<main><div class="wrap">
+<p class="lede">Moving from two incomes to one is one of the biggest financial adjustments after separation. A clear budget gives you control, and it's also the foundation of a strong home loan application.</p><p>This guide covers both: building a budget that works, then gathering everything a lender will ask for.</p>
+
+<div class="stat"><div class="fig">34%</div><div class="lab">of sole-parent households in Australia are living in poverty</div><div class="src">Source: Australian Council of Social Service, 2023</div></div>
+<section class="callout"><h2>You're not alone in feeling this way</h2><p>Only half of Australian women report feeling financially independent, compared to 65% of men. Seven in ten say it matters to them, and two in three want more control but aren't sure where to start. (Fidelity International research)</p></section>
+<section><h2>Start with a full picture</h2><ul class="ticks"><li>List every source of income.</li><li>List all expenses and debts, including irregular costs like car registration and school fees.</li><li>Separate fixed costs from variable ones.</li></ul></section>
+<section><h2>Check what support you're entitled to</h2><ul class="plain"><li><b>Government payments.</b> Contact Services Australia to find out whether you can receive payments such as Parenting Payment or Family Tax Benefit. <a href="https://www.servicesaustralia.gov.au/individuals" target="_blank" rel="noopener">servicesaustralia.gov.au</a></li><li><b>Spousal maintenance.</b> Ask your lawyer whether you may be entitled to ongoing financial support from your former partner.</li></ul></section>
+<section><h2>Build a bare-bones budget, then build up</h2><ul class="plain"><li><b>Essentials first:</b> housing, utilities, food, transport, insurance and minimum debt repayments. This is the true minimum you need each month.</li><li><b>Cut back non-essentials</b> like entertainment and recreation, so the non-negotiable bills are always covered.</li><li><b>Set short- and long-term goals</b> and a small savings target, even $20 a week.</li><li><b>Build a starter emergency fund</b> in an account in your own name that only you can access.</li><li><b>Use credit cards carefully.</b> Make at least the minimum payment each month and stay within your limit.</li><li><b>Review monthly</b>, using a simple app or spreadsheet.</li></ul></section>
+<section class="callout"><h2>Why your money habits matter to lenders</h2><p>Lenders generally look favourably on people who manage their money well. A healthy financial position may give you more lenders and loan products to choose from, and may lead to lower interest rate options and fewer fees.</p></section>
+<section><h2>Your loan-ready document checklist</h2><div class="groups"><div class="grp"><h3>Identity & income</h3><ul class="ticks"><li>Photo ID (driver licence or passport).</li><li>Two to three recent payslips.</li><li>Two years' tax returns and notices of assessment.</li><li>Evidence of other income, such as child support or government payments.</li></ul></div><div class="grp"><h3>Financial position</h3><ul class="ticks"><li>Three months of statements for every bank account, loan and card.</li><li>A list of all debts, including joint ones.</li><li>A list of assets, including super if relevant.</li></ul></div><div class="grp"><h3>Separation documents</h3><ul class="ticks"><li>Separation agreement or consent orders, if finalised.</li><li>Evidence of the date of separation, where relevant.</li><li>Any court orders relating to the property settlement.</li></ul></div></div></section>
+<section><h2>Before you apply</h2><ul class="plain"><li><b>Gather documents early.</b> Tax notices and court orders can take time.</li><li><b>Pay all bills on time.</b> If you're struggling, ask the provider whether a payment plan is possible.</li><li><b>Avoid new debt or large purchases</b>, and limit new credit applications.</li><li><b>Ask about pre-approval</b> for a clear budget before you start looking.</li></ul></section>
+
+<section class="help"><img src="assets/melissa.webp" alt="Melissa White"><div>
+  <h2 class="script">How we can help</h2><ul class="ticks"><li>Review your budget as part of what you can afford to borrow, and explain how lenders read your expenses.</li><li>Give you a personalised document checklist and review everything before it goes to a lender.</li><li>Explore whether debt consolidation could help.</li><li>Keep the process moving so nothing stalls.</li></ul></div></section>
+<aside class="advpanel">
+  <div class="advfig">22%</div>
+  <p>About 22% of financial advisers on ASIC's national register are women, yet many women say they'd prefer to work with a female adviser or broker who understands their situation.</p>
+  <p class="src">Source: Wealth Data analysis of the ASIC Financial Advisers Register.</p>
+</aside>
+<section class="cta"><h2>Ready for a conversation about your situation?</h2>
+<p>Book a free, confidential chat. No pressure, no obligation.</p>
+<a class="book" href="https://broadbeach.moneyquest.com.au/finance-specialists/?utm_source=herfreshstart&amp;utm_medium=guide&amp;utm_campaign=budgeting-and-getting-loan-ready" target="_blank" rel="noopener">Book your free, confidential chat</a>
+<p class="or">Or contact Melissa directly:</p><div class="contact">
+  <div class="chip"><span>0468 794 804</span><button type="button" data-copy="0468 794 804">Copy</button></div>
+  <div class="chip"><span>melissa.white@moneyquest.com.au</span><button type="button" data-copy="melissa.white@moneyquest.com.au">Copy</button></div>
+</div></section>
+<section><h2>More free guides</h2><div class="next"><a href="first-home-loan-after-divorce.html">Your First Home Loan: What Changes After Divorce or Separation</a><a href="financial-abuse-your-next-chapter.html">Your Next Chapter: Recognising and Escaping Financial Abuse</a><a href="staying-in-your-home-after-separation.html">Can You Stay in Your Home? Refinancing & Payouts After Separation</a><a href="rebuilding-credit-after-separation.html">Rebuilding Your Credit Score: After Separation</a></div></section>
+</div></main>
+<footer class="legal"><div class="wrap">
+<p class="imp">Important information</p><p>This information is general in nature and does not take into account your objectives, financial situation or needs. You should consider whether it is appropriate for your circumstances and seek independent professional advice where appropriate. Lending is subject to lender approval, eligibility criteria, terms and conditions, and fees and charges may apply. MoneyQuest Finance Specialists are mortgage and finance brokers and do not provide legal or family law advice.</p><p>Melissa White is a Credit Representative (No. 537997) of Money Quest Australia Pty Ltd, Australian Credit Licence 487823.</p>
+<p>Statistics are drawn from the sources named alongside them and were current when these guides were written in 2026.</p>
+</div></footer>
+<script>
+document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){
+ var t=b.getAttribute('data-copy');
+ function sel(){var s=b.previousElementSibling,r=document.createRange();r.selectNodeContents(s);var w=getSelection();w.removeAllRanges();w.addRange(r)}
+ function done(){var o=b.textContent;b.textContent='Copied';setTimeout(function(){b.textContent=o},1600)}
+ try{navigator.clipboard.writeText(t).then(done,sel)}catch(e){sel()}
+})});
+</script>
+</body></html>
