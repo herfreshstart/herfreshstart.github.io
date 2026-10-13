@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Your First 30 Days After Separation: A Money Checklist | Her Fresh Start</title>
+<meta name="description" content="Just separated? A simple week-by-week money checklist for your first 30 days: protect yourself, get the full picture, build a bare-bones budget and line up the right help.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap">
+<style>
+/* Layout: flyer-style soft red wash up top fading into a pale blush page; one readable column; navy and slate as secondary. */
+:root{
+  --blush-deep:#F7959D; --blush-mid:#FBC3C5; --blush:#FDE3E2; --wash:#FEF4F3;
+  --red:#F04937; --red-text:#C7311F; --navy:#30404E; --slate:#3E4B57;
+  --surface:#FFFFFF; --fg:#2B3945; --muted:#5E6A73; --line:#F3CFCD;
+  --font:Arial,"Helvetica Neue",Helvetica,sans-serif; --script:"Caveat",cursive;
+  color-scheme:light;
+}
+
+*{box-sizing:border-box}
+body{background:var(--wash);color:var(--fg);font:16px/1.6 var(--font);margin:0}
+a{color:var(--red-text)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--navy);outline-offset:3px;border-radius:4px}
+.wrap{max-width:46rem;margin:0 auto;padding-inline:16px}
+.logo{display:block;height:auto;width:220px;max-width:62%}
+h1,h2,h3{font-family:var(--font);text-wrap:balance;line-height:1.2;margin:0;color:var(--navy)}
+.eyebrow{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--red-text)}
+.script{font-family:var(--script);font-weight:700;color:var(--red);letter-spacing:0}
+.hero{background:linear-gradient(180deg,var(--blush-deep) 0%,var(--blush-mid) 55%,var(--wash) 100%)}
+.contact{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 8px 8px 14px;min-width:0;max-width:100%}
+.chip span{font-weight:700;overflow-wrap:anywhere;user-select:all;color:var(--navy)}
+.chip button{background:var(--blush);color:var(--navy);border:0;border-radius:5px;padding:6px 10px;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer}
+.chip button:hover{background:var(--blush-mid)}
+.cta{background:var(--red);color:#fff;border-radius:14px;padding:26px 24px;margin:34px 0}
+.cta h2{font-size:1.4rem;margin-bottom:.35em;color:#fff}
+.cta p{color:#fff;margin:0 0 16px;opacity:.95}
+.cta .chip{border-color:transparent}
+.cta .book{display:inline-block;background:#fff;color:var(--red-text);font-weight:700;font-size:1.05rem;text-decoration:none;border-radius:999px;padding:13px 22px;max-width:100%}
+.cta .book:hover{background:var(--blush)}
+.cta .book:focus-visible{outline-color:#fff}
+.cta .or{margin:18px 0 10px;font-size:.9rem}
+.advpanel{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;align-items:start;margin:34px 0;padding:22px;background:#fff;border-radius:14px;border:1px solid var(--line)}
+.advfig{font-size:2.6rem;font-weight:700;line-height:1;grid-row:span 2;color:var(--navy)}
+.advpanel p{margin:0}
+.advpanel .src{font-size:.8rem;color:var(--muted)}
+.legal{font-size:.78rem;color:#D9DFE3;line-height:1.55;background:var(--navy);padding-block:26px 40px}
+.legal p{margin:0 0 .7em}
+.legal .imp{font-weight:700;color:#fff;margin-bottom:.4em}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+
+.hero .wrap{padding-block:22px 40px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+.back{color:var(--navy);font-weight:700;font-size:.9rem;text-decoration:none;background:#fff;border-radius:999px;padding:7px 14px}
+.back:hover{background:var(--blush)}
+.hero h1{font-size:clamp(1.75rem,5vw,2.5rem);margin-top:.35em}
+.hero .by{color:var(--slate);margin-top:1em;font-size:.95rem}
+main .wrap{padding-block:8px 8px}
+main p{margin:0 0 1em}
+.lede{font-size:1.12rem}
+.stat{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;align-items:center;background:var(--blush);border-radius:14px;padding:20px 22px;margin:28px 0}
+.stat .fig{font-size:clamp(2rem,7vw,2.8rem);font-weight:700;color:var(--red-text);line-height:1;font-variant-numeric:tabular-nums}
+.stat .lab{font-weight:700;min-width:0;color:var(--navy)}
+.stat .src{grid-column:1/-1;font-size:.8rem;color:var(--muted)}
+@media (max-width:480px){.stat{grid-template-columns:1fr}}
+section{margin:34px 0}
+section h2{font-size:1.35rem;margin-bottom:.7em}
+ul.plain{margin:0;padding-left:1.2em;display:grid;gap:.55em}
+ul.plain li::marker{color:var(--red)}
+ul.ticks{list-style:none;margin:0;padding:0;display:grid;gap:.55em}
+ul.ticks li{position:relative;padding-left:2em}
+ul.ticks li::before{content:"";position:absolute;left:0;top:.2em;width:1.2em;height:1.2em;border-radius:4px;background:var(--red)}
+ul.ticks li::after{content:"";position:absolute;left:.42em;top:.36em;width:.32em;height:.62em;border:solid #fff;border-width:0 .16em .16em 0;transform:rotate(45deg)}
+.callout{background:var(--blush);border-radius:14px;padding:20px 22px}
+.callout h2{font-size:1.05rem;color:var(--red-text);margin-bottom:.4em}
+.callout p{margin:0;font-size:1.05rem;color:var(--navy)}
+.help{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;display:grid;grid-template-columns:120px 1fr;gap:20px;align-items:end;overflow:hidden}
+.help img{width:120px;height:auto;display:block;margin-bottom:-24px}
+.help h2{font-size:1.5rem;margin-bottom:.4em}
+.help > div{min-width:0;padding-bottom:4px}
+.help ul.ticks li::before{background:var(--navy)}
+@media (max-width:520px){.help{grid-template-columns:1fr}.help img{width:110px;margin:0 auto -24px;order:2}}
+.groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:14px}
+.grp{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;min-width:0}
+.grp h3{font-size:1rem;margin-bottom:.7em}
+.grp ul.ticks{font-size:.95rem}
+ol.steps{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+ol.steps li{display:grid;grid-template-columns:2.4rem 1fr;gap:14px;align-items:start;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+ol.steps li > div{min-width:0}
+ol.steps .n{display:grid;place-items:center;width:2.4rem;height:2.4rem;border-radius:50%;background:var(--red);color:#fff;font-weight:700;font-size:1.1rem}
+ol.steps b{color:var(--navy)}
+.safety{background:#fff;border:2px solid var(--red);border-radius:14px;padding:20px 22px;margin:24px 0}
+.safety h2{font-size:1.2rem;margin-bottom:.3em}
+.safety p{margin:0 0 12px;font-size:.95rem}
+.safety dl{display:grid;grid-template-columns:1fr auto;gap:6px 16px;margin:0 0 12px}
+.safety dt{min-width:0}
+.safety dd{margin:0;font-weight:700;white-space:nowrap;user-select:all;color:var(--navy);font-variant-numeric:tabular-nums}
+.safety .tip{margin:0;color:var(--muted);font-size:.88rem}
+.quote{margin:34px 0;padding:20px 22px;background:var(--blush);border-radius:14px;font-family:var(--script);font-size:1.7rem;line-height:1.25;color:var(--red-text)}
+.next{display:grid;gap:10px}
+.next a{display:block;padding:14px 16px;background:#fff;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--navy);font-weight:700}
+.next a:hover{border-color:var(--red);background:var(--blush)}
+.hero .nav{display:flex;gap:8px;flex-wrap:wrap}
+</style></head>
+<body>
+<header class="hero"><div class="wrap">
+  <div class="top"><img class="logo" src="../assets/logo-broadbeach.png" alt="MoneyQuest Finance Specialists Broadbeach"><div class="nav"><a class="back" href="index.html">All blog posts</a><a class="back" href="../index.html">Free guides</a></div></div>
+  <div class="eyebrow">Her Fresh Start · Blog</div>
+  <h1>Your First 30 Days After Separation: A Money Checklist</h1>
+  <div class="by">By Melissa White, Mortgage Broker &amp; Finance Specialist, MoneyQuest Broadbeach · 20 October 2026</div>
+</div></header>
+<main><div class="wrap">
+<p class="lede">The first few weeks after separation can feel like a blur. There's so much to sort out, emotionally and practically, and money is often the part that keeps you up at night.</p>
+<p>You don't need to fix everything at once. What helps most is knowing what to do first. Here's the simple, week-by-week checklist I share with women who come to me in those early days, so you can protect yourself, see where you stand, and make decisions from a steadier place.</p>
+<div class="stat"><div class="fig">77%</div><div class="lab">of Australia's 1.2 million one-parent families are headed by a single mother. If you're about to manage on one income, you're far from alone.</div><div class="src">Source: ABS, Labour Force Status of Families, June 2025.</div></div>
+<section><h2>Week 1: Protect yourself</h2>
+<p>The first job is making sure you can pay for the basics and that your money is safe. Start here:</p>
+<ul class="ticks"><li><b>Open a bank account in your own name.</b> Then have your pay, and any government payments, paid into it. Ideally choose a bank your ex doesn't use.</li><li><b>Change your passwords and PINs.</b> Include online banking, email, myGov and any shared apps or cloud storage, and update your account recovery details.</li><li><b>Check who can access what.</b> Look at joint accounts and redraw facilities on your home loan. Ask your bank what options it has, such as needing both of you to approve withdrawals.</li><li><b>Keep copies of key documents somewhere safe.</b> That includes ID, recent payslips, tax returns, bank and loan statements, and any insurance or super details.</li></ul>
+</section>
+<section><h2>Week 2: Get the full picture</h2>
+<p>It's hard to plan when you're not sure what you have or what you owe. This week, write it all down in one place:</p>
+<ul class="ticks"><li><b>Every account and debt.</b> Your home loan, car loan, personal loans, credit cards, and buy now pay later accounts. Note which are in your name, your ex's name, or both.</li><li><b>Joint debts.</b> On a joint loan, each of you is usually responsible for the whole amount, not half. If a joint credit card is still open, talk to the lender about closing it or stopping new spending.</li><li><b>Your credit report.</b> You can get your credit report free once every three months from each credit reporting body, such as Equifax and Experian. Check it line by line for anything you don't recognise.</li><li><b>Your super.</b> Note your balance, and check who you've nominated to receive it if you die.</li></ul>
+</section>
+<section><h2>Week 3: Build a bare-bones budget</h2>
+<p>Now work out what life costs on one income. Don't aim for perfect, aim for honest.</p>
+<ul class="ticks"><li><b>List your income.</b> Your pay, plus any child support or government payments.</li><li><b>List your essentials first.</b> Housing, food, utilities, transport, insurance, minimum debt repayments, and the costs of children in your care.</li><li><b>Cut or pause the non-essentials</b> for now, such as subscriptions you don't use. You can add things back later.</li><li><b>Tell Services Australia.</b> If you receive any Centrelink payments or family assistance, Services Australia asks you to let them know within 14 days of separating, so you're paid the right amount. Ask what you may now be eligible for, and about child support arrangements if you have children.</li></ul>
+<p style="margin-top:1.2em">If the numbers don't add up and bills are piling up, the National Debt Helpline (1800 007 007) offers free, confidential financial counselling.</p>
+</section>
+<section><h2>Week 4: Line up the right help</h2>
+<p>By now you'll have a much clearer picture. This is the time to get the right people in your corner, before you agree to anything.</p>
+<ul class="ticks"><li><b>A family lawyer.</b> They can explain your rights, how property and super may be divided, and the time limits that apply. For married couples, an application for property orders generally has to be made within 12 months of a divorce taking effect. For de facto couples, it's generally within two years of separating.</li><li><b>A financial counsellor or adviser</b>, if you need help with debts or longer-term planning.</li><li><b>A mortgage broker</b>, if your home or a future home is part of the picture. Knowing what you could borrow on your own helps you and your lawyer weigh up your options.</li><li><b>Keep paying the home loan and other joint debts</b> while things are being worked out. Missed repayments can show up on both of your credit files. If repayments are getting hard, speak to your lender early about hardship options.</li></ul>
+</section>
+<section class="callout"><h2>A tip worth knowing</h2><p>Try not to sign anything, take on new debt, or apply for lots of new credit in these first weeks. Each credit application can be recorded on your credit file, and it's much easier to make good decisions once you know exactly where you stand.</p></section>
+<section class="help"><img src="../assets/melissa.webp" alt="Melissa White"><div>
+  <h2 class="script">How we can help</h2><ul class="ticks"><li>Work out what you could borrow on your income alone, so you know your options early.</li><li>Explain how joint debts and your credit report affect what lenders see.</li><li>Show you how lenders look at your day-to-day expenses and budget.</li><li>Help you get loan-ready with a personalised document checklist.</li><li>Work alongside your family lawyer so your finance is ready when settlement is.</li></ul></div></section>
+<section><h2>Want the full picture?</h2><div class="next"><a href="../budgeting-and-getting-loan-ready.html">Read the free guide: Budgeting on One Income &amp; Getting Loan-Ready</a></div></section>
+<section class="cta"><h2>Ready for a conversation about your situation?</h2>
+<p>Book a free, confidential chat. No pressure, no obligation.</p>
+<a class="book" href="https://broadbeach.moneyquest.com.au/finance-specialists/?utm_source=herfreshstart&amp;utm_medium=blog&amp;utm_campaign=first-30-days-after-separation-money-checklist" target="_blank" rel="noopener">Book your free, confidential chat</a>
+<p class="or">Or contact Melissa directly:</p><div class="contact">
+  <div class="chip"><span>0468 794 804</span><button type="button" data-copy="0468 794 804">Copy</button></div>
+  <div class="chip"><span>melissa.white@moneyquest.com.au</span><button type="button" data-copy="melissa.white@moneyquest.com.au">Copy</button></div>
+</div></section>
+
+<aside class="safety"><h2>Need support now?</h2><p>If you're experiencing financial or domestic abuse, these services are free and confidential. In an emergency, call 000.</p>
+<dl><dt>DVConnect Womensline</dt><dd>1800 811 811</dd><dt>1800RESPECT (24/7)</dt><dd>1800 737 732</dd><dt>National Debt Hotline</dt><dd>1800 007 007</dd><dt>Lifeline</dt><dd>13 11 14</dd></dl></aside>
+</div></main>
+<footer class="legal"><div class="wrap">
+<p class="imp">Important information</p><p>This information is general in nature and does not take into account your objectives, financial situation or needs. You should consider whether it is appropriate for your circumstances and seek independent professional advice where appropriate. Lending is subject to lender approval, eligibility criteria, terms and conditions, and fees and charges may apply. MoneyQuest Finance Specialists are mortgage and finance brokers and do not provide legal or family law advice.</p><p>Melissa White is a Credit Representative (No. 537997) of Money Quest Australia Pty Ltd, Australian Credit Licence 487823.</p>
+<p>Statistics are drawn from the sources named alongside them and were current when this article was written in October 2026.</p>
+</div></footer>
+<script>
+document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){
+ var t=b.getAttribute('data-copy');
+ function sel(){var s=b.previousElementSibling,r=document.createRange();r.selectNodeContents(s);var w=getSelection();w.removeAllRanges();w.addRange(r)}
+ function done(){var o=b.textContent;b.textContent='Copied';setTimeout(function(){b.textContent=o},1600)}
+ try{navigator.clipboard.writeText(t).then(done,sel)}catch(e){sel()}
+})});
+</script>
+</body></html>
